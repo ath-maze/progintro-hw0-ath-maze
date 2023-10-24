@@ -10,3 +10,4 @@ bandit6: as bandit5 write "cd inhere" to open the directory, "find . -type f -si
 bandit7: as bandit6 write "file / -type f -user bandit7 -group bandit6 -size 33c" to find the filepath of the one file that does not have permission denied, copy the filepath, write "cat /var/lib/dpkg/info/bandit7.password" to get the new password and after logging out write it in solution.txt
 bandit8: as bandit7 write "grep millionth data.txt" to get the new password and after logging out write it in solution.txt
 bandit9: as bandit8 write "sort data. txt | uniq -c" to get a list of sorted passwords with the number of their duplicates in the file, the one with the number 1 is the new password, copy it and after logging out write it in solution.txt
+bandit10: as bandit9 write "strings data.txt" to get a list of readable content, the new password is the string of characters after the most "====", after logging out write it in solution.txt
